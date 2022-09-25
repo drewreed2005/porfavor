@@ -2,77 +2,79 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+{% set project = "Work Watch" %}
 
 {% block body %}
-    <!- Try building a new body here, bootstrap is a wise choice ->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Buddy</strong></h1>
-        <p class="text-secondary">Drew Reed</p>
-    </div>
-{% endblock %}
-
-{% block body %}
-    <!-- Start of body content specific to page -->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-white"><strong>Drew's Python Lounge</strong></h1>
+        <h1 class="text-white"><strong>The Work Watch</strong></h1>
         <div class="row">
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{ url_for('static', filename='assets/IMG_2978.jpeg') }}" alt="Python Development" height="250">
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/Shrug.jpeg') }}" alt="What?" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">What should <mark>I learn</mark>?</h5>
+                    <h5 class="card-title">What is "Work Watch?"</h5>
                     <p class="card-text">
-                        <ol>
-                            <li>Python 3.9 is used for most of our backend PBL. HTML, CSS, JavaScript will be used in frontend</li>
-                            <li>Visuals Studio Code (VS Code) is the primary editor, Interactive Development Environment (IDE).</li>
-                            <li>GitHub.  Managing and sharing code change, branches, pull requests, issues, and more will be through GitHub.</li>
-                            <li>DevOps. Python programmers should have a passion for managing the environment and learning automation (Git, Linux, Bash, Python Packages, Docker).</li>
-                            <li>API and Microservice using Flask.  Mastering development techniques in creating and consuming RESTful APIs</li>
-                        </ol>
+                        The "Work Watch" is a customizable timer program which helps you balance your work and stress.
+                        Often, it feels as if you're stuck toiling away at assignments, watching as the clock ticks later and later while you hardly seem to make any progress.
+                        As a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0010027710002994?via%3Dihub">2011 study</a> proved, working for long periods of time without breaks can hinder your ability to output high-quality work.
+                        For students especially, as Laurie Santos covered in her speech <a href="https://www.youtube.com/watch?v=ZizdB0TgAVM">"Psychology and the Good Life,"</a> many feel that they do not have time to spend time doing things that actually supplement their learning like reading and exercising.
+                        During scheduled break time, students can spend time on these ideal activities while actively improving their output.
+                        The "Work Watch" helps you by telling you when to take these breaks, suggesting what you do during these breaks, and isolating the user from the ticking timer to promote focus on the tasks at hand.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{ url_for('static', filename='assets/flask.png') }}" alt="Flask Development" height="250">
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/featured-image.jpg') }}" alt="Features" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">What is <mark>Flask</mark>? How do I start Web development?</h5>
+                    <h5 class="card-title">Features of "Work Watch"</h5>
                     <p class="card-text">
                         <ol>
-                            <li>Flask Framework is the popular Web Application development framework of Python.</li>
-                            <li>Blueprint is utility to help abstract complexity, moving information in independent files and directories.</li>
-                            <li>HTML using Bootstrap is a great way to build interesting pages and reduce CSS</li>
-                            <li>Jinja2 is a server-side Python like template engine, supports HTML5 web development, and provides full integration with Flask.</li>
+                            <li>Create timers that run in the background of a work session, notifying you when to take breaks based on the length of the task.</li>
+                            <li>Input the anticipated duration of your tasks as well as the title of your tasks to ensure that you stay organized.</li>
+                            <li>Suggest beneficial, personalized activities to complete during a break.</li>
+                            <li>Receive time-based notifications at customizable intervals to tell you roughly how much progress you should have made by certain points in time.</li>
+                            <li>Reflect on your use of time and your productivity with automated work summaries.</li>
+                            <li>Interact with "Work Watch" with Game Mode, which gives you EXP points for being productive that can be spent to further customize "Work Watch".*</li>
                         </ol>
+                        *Bonus feature which will be added based on user feedback.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{ url_for('static', filename='assets/MassifaceDrip.png') }}" alt="Backend and Persistence" height="250">
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/thewatcherslogo.png') }}" alt="The Watchers" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">How do you manage <mark>Persistent data</mark> with Python?</h5>
+                    <h5 class="card-title">Who is making "Work Watch"?</h5>
                     <p class="card-text">
-                        <ol>
-                            <li>A Database is an example of persistent data that is held on a computer.  Programming languages and frameworks allow you to store and retrive data.</li>
-                            <li>SQL stands for Structured Query Language · SQL lets you access and manipulate databases and has become a long lasting development standard.</li>
-                            <li>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper (ORM) that gives application developers the full power and flexibility of SQL.</li>
-                            <li>There are many newer and sometimes easier Database languages and frameworks.  Mongo, DynamoDB, Neo4J are Databases being used by students developers in last 3 years.</li>
-                        </ol>
+                        We're called "The Watchers"...because we're making "Work Watch".
+                        This is a team made up of Drew Reed, Devon Shepherd, Trent Cardall and Jagger Klein.
+                        For more information about our roles, our work process, the purpose of this program, and the anticipated code behind it, click the button below.
+                        Expect more information (including progress reports) in the near future!
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">More Information</a>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 {% endblock %}
 
 {% block background %}
+    <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vanta.net.min.js') }}"></script>
+    <script>
+        VANTA.NET({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
 {% endblock %}
